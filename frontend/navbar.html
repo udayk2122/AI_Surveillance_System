@@ -1,0 +1,64 @@
+<style>
+    .navbar {
+        transition: all 0.4s ease;
+        padding: 1rem 0; 
+        background-color: #000000 !important; 
+        top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .nav-link { color: rgba(255, 255, 255, 0.9) !important; font-weight: 500; transition: color 0.3s; }
+    .nav-link:hover, .nav-link.active { color: #fff !important; text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+    
+    /* Logout specific styling */
+    .btn-logout {
+        border: 1px solid rgba(255,255,255,0.3);
+        color: #fff !important;
+        transition: 0.3s;
+    }
+    .btn-logout:hover {
+        background: rgba(220, 53, 69, 0.2);
+        border-color: #dc3545;
+    }
+
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background-color: #000; padding: 1rem; border-radius: 0 0 10px 10px;
+        }
+        .nav-item { margin: 5px 0; }
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="index.html" style="color: #dc3545;">
+            <i class="fas fa-shield-halved text-warning me-2"></i> 
+           Advanced Surveillance<span style="color: #ffc107;"> Gun Detection</span> <span style="color: #198754;">AI</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link px-3 active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                
+                <li class="nav-item d-none" id="nav-dash">
+                    <a class="nav-link px-3 text-warning fw-bold" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item d-none ms-lg-2" id="nav-logout">
+                    <button onclick="logoutUser()" class="btn btn-logout rounded-pill px-4 btn-sm fw-bold">
+                        <i class="fas fa-sign-out-alt me-1"></i> Logout
+                    </button>
+                </li>
+
+                <li class="nav-item" id="nav-login">
+                    <a class="nav-link px-3" href="login.html">Login</a>
+                </li>
+                <li class="nav-item ms-lg-2" id="nav-register">
+                    <a class="btn btn-primary rounded-pill px-4 text-white fw-bold shadow-sm" href="register.html">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

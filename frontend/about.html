@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About | Advanced Surveillance Gun Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <header class="about-header text-white text-center">
+        <div class="container position-relative z-2 animate-on-scroll">
+            <h6 class="text-warning text-uppercase fw-bold ls-2 mb-3">Project Overview</h6>
+            <h1 class="display-3 fw-bold mb-4">The Future of <span class="text-primary">Public Safety</span></h1>
+            <div class="d-flex justify-content-center">
+                <p class="lead text-white-50 col-lg-8">
+                 Advanced Surveillance Gun Detection bridges the gap between Computer Vision and real-world security. We transform standard CCTV feeds into active threat-neutralization sensors using YOLOv8.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container py-5">
+            
+            <div class="row align-items-center mb-5 pb-5 border-bottom g-5">
+                <div class="col-md-6 animate-on-scroll">
+                    <div class="image-stack">
+                        <img src="https://img.freepik.com/premium-photo/technical-operator-stands-control-room-monitoring-various-activities-multiple-displays-with_1299716-1599.jpg" class="img-fluid rounded-4 shadow-lg preview-img" alt="Security Problem">
+                    </div>
+                </div>
+                <div class="col-md-6 animate-on-scroll delay-1">
+                    <h6 class="text-danger fw-bold text-uppercase">The Crisis</h6>
+                    <h2 class="fw-bold mb-4 display-6">Manual Monitoring is Obsolete</h2>
+                    <p class="text-muted lead">Security guards suffer from "Screen Fatigue" after just 20 minutes of continuous monitoring. In critical moments where weapons are drawn, seconds determine lives.</p>
+                    <ul class="list-unstyled mt-4 text-muted fs-5">
+                        <li class="mb-3 d-flex align-items-center"><i class="fas fa-times-circle text-danger me-3"></i> <strong>Reactive:</strong> Most systems only help after an incident occurs.</li>
+                        <li class="mb-3 d-flex align-items-center"><i class="fas fa-times-circle text-danger me-3"></i> <strong>Fatigue:</strong> Human attention span is the weakest link in security.</li>
+                        <li class="d-flex align-items-center"><i class="fas fa-times-circle text-danger me-3"></i> <strong>Scaling:</strong> Impossible to monitor 100+ cameras simultaneously with humans.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row align-items-center mb-5 pb-5 border-bottom flex-row-reverse g-5">
+                <div class="col-md-6 animate-on-scroll">
+                    <img src="https://th.bing.com/th/id/R.bd4a37beb95adadc5aacf7b484a88170?rik=rmVWH5PUS0pkIQ&riu=http%3a%2f%2fdexlock.com%2fwp-content%2fuploads%2f2023%2f05%2fbody-temperature-during-coronavirus-pandemic-thermal-image-scaled.jpg&ehk=O5bvWDu5Y31RqEunbs1Uts%2b7ZtjWweO9RszoYy4YZp8%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded-4 shadow-lg preview-img" alt="AI Solution">
+                </div>
+                <div class="col-md-6 animate-on-scroll delay-1">
+                    <h6 class="text-success fw-bold text-uppercase">The Solution</h6>
+                    <h2 class="fw-bold mb-4 display-6">AI-Powered Automation</h2>
+                    <p class="text-muted lead">We built a centralized <strong>Advanced Surveillance Gun Detection Engine</strong> that leverages custom-trained YOLOv8 models. It performs millisecond-level frame analysis to detect tactical threats.</p>
+                    <div class="p-4 bg-light rounded-4 border-left-green shadow-sm mt-4">
+                        <h6 class="fw-bold mb-2">Autonomous Vigilance</h6>
+                        <p class="text-muted small mb-0">The system autonomously classifies threats (Handguns, Knives, Intruders) and pushes instant alerts to relevant authorities before a crime escalates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-primary fw-bold text-uppercase">Execution Logic</h6>
+                <h2 class="fw-bold display-5">System Architecture</h2>
+            </div>
+
+            <div class="row g-4 mb-5 pb-5 border-bottom">
+                <div class="col-md-3 text-center animate-on-scroll delay-1">
+                    <div class="step-card h-100">
+                        <div class="d-flex justify-content-center">
+                            <div class="step-circle bg-dark">01</div>
+                        </div>
+                        <h5 class="fw-bold">Ingest</h5>
+                        <p class="text-muted small">Connects to RTSP, IP Cameras, or local storage streams.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center animate-on-scroll delay-2">
+                    <div class="step-card h-100">
+                        <div class="d-flex justify-content-center">
+                            <div class="step-circle bg-primary">02</div>
+                        </div>
+                        <h5 class="fw-bold">Inference</h5>
+                        <p class="text-muted small">Neural networks identify bounding boxes and threat labels.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center animate-on-scroll delay-1">
+                    <div class="step-card h-100">
+                        <div class="d-flex justify-content-center">
+                            <div class="step-circle bg-warning text-dark">03</div>
+                        </div>
+                        <h5 class="fw-bold">Verification</h5>
+                        <p class="text-muted small">Confidence thresholds prevent false alarms and logic loops.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center animate-on-scroll delay-2">
+                    <div class="step-card h-100">
+                        <div class="d-flex justify-content-center">
+                            <div class="step-circle bg-success">04</div>
+                        </div>
+                        <h5 class="fw-bold">Alert</h5>
+                        <p class="text-muted small">Instant dashboard push and email notifications dispatched.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 animate-on-scroll">
+                    <img src="https://gloriumtech.com/wp-content/uploads/2022/04/The-Future-of-Software-Development.jpg" class="img-fluid rounded-4 shadow-lg preview-img" alt="Future Tech">
+                </div>
+                <div class="col-md-6 ps-md-5 animate-on-scroll delay-1 mt-5 mt-md-0">
+                    <h6 class="text-info fw-bold text-uppercase">Roadmap</h6>
+                    <h2 class="fw-bold mb-4 display-6">Future Development</h2>
+                    <div class="vision-box p-3 bg-white mb-3 shadow-sm rounded-3 border-left-orange">
+                        <h6 class="fw-bold m-0"><i class="fas fa-microchip me-2 text-warning"></i> Edge Deployment</h6>
+                        <small class="text-muted">Optimizing models for NVIDIA Jetson and specialized hardware.</small>
+                    </div>
+                    <div class="vision-box p-3 bg-white mb-3 shadow-sm rounded-3 border-left-orange">
+                        <h6 class="fw-bold m-0"><i class="fas fa-satellite me-2 text-warning"></i> Multi-Node Mesh</h6>
+                        <small class="text-muted">Connecting disparate city nodes into a single Tactical HUD.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
